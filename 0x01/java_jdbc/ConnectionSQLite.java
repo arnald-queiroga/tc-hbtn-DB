@@ -5,7 +5,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class ConnectionSQLite {
-    public static void connect() {
+    public static void initConnection() {
         Connection conn = null;
         try {
             String url = "jdbc:sqlite:sqlite_database_2022.db";
@@ -24,7 +24,7 @@ public class ConnectionSQLite {
     }
 
     public static void main(String[] args) {
-        connect();
+        initConnection();
     }
 
 }
